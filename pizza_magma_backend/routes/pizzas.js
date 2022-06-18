@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const {
-  listProducts,
-} = require("../controllers/products");
+  listPizzas,
+} = require("../controllers/pizzas");
 
 router
   .route("/")
-  .get(listProducts);
+  .get(listPizzas);
 
   module.exports = router;

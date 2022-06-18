@@ -4,7 +4,7 @@ const swaggerUI = require("swagger-ui-express");
 const cors = require("cors");
 const swaggerFile = require('./swagger.json')
 const usersRoutes = require("./routes/users");
-const productsRoutes = require("./routes/products");
+const pizzasRoutes = require("./routes/pizzas");
 const drinksRoutes = require("./routes/drinks");
 const accompanimentsRoutes = require("./routes/accompaniments");
 const desertsRoutes = require("./routes/deserts");
@@ -16,7 +16,7 @@ server.use(cors());
 
 //Mount routes
 server.use("/users", usersRoutes);
-server.use("/products", productsRoutes);
+server.use("/pizzas", pizzasRoutes);
 server.use("/drinks", drinksRoutes);
 server.use("/accompaniments", accompanimentsRoutes);
 server.use("/deserts", desertsRoutes);
