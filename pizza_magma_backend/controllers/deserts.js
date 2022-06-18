@@ -9,7 +9,7 @@ exports.listDeserts = async (req, res) => {
   },
   {
     id: 2,
-    name: 'Brownie',
+    name: 'Tres leches',
     price: 2900
   },
   {

@@ -12,13 +12,19 @@ exports.listAccompaniments = async (req, res) => {
     id: 2,
     name: 'Bread sticks con salsa de tomate',
     units: 10,
-    price: 1500
+    price: 2000
   },
   {
     id: 3,
     name: 'Calzone',
     units: 1,
     price: 1500
+  },
+  {
+    id: 4,
+    name: 'Pan con tomate y queso',
+    units: 9,
+    price: 2500
   }
 ]
   res.json(accompaniments);
