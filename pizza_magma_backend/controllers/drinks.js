@@ -5,22 +5,19 @@ exports.listDrinks = async (req, res) => {
   const drinks = [{
     id: 1,
     name: 'Coca cola',
-    category: 'Gaseosa',
-    mililiters: 600,
+    description: 'Categoria: Gaseosa\nMililitros: 600',
     price: 800
   },
   {
     id: 2,
     name: 'Jugo de naranja',
-    category: 'Jugo de naranja',
-    mililiters: 1000,
+    description: 'Categoria: Jugo natural\nMililitros: 1000',
     price: 1100
   },
   {
     id: 3,
     name: 'Té frío de limón',
-    category: 'Té frío',
-    mililiters: 1000,
+    description: 'Categoria: Te frío\nMililitros: 1000',
     price: 1300
   }
 ]
