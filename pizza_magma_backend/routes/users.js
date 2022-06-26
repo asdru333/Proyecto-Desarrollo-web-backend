@@ -4,8 +4,7 @@ const {
   createUser,
   loginUser,
   recoverPassword,
-  resetPassword,
-  listUsers,
+  resetPassword
 } = require("../controllers/users");
 const { checkUserIsAuthenticated, checkRoles } = require("../middlewares/auth");
 const { validateSchema } = require("../middlewares/validation");
@@ -19,7 +18,7 @@ const {
 
 router
   .route("/")
-  .get([checkUserIsAuthenticated, checkRoles([ROLES.ADMIN])], listUsers)
+  .get([checkUserIsAuthenticated, checkRoles([ROLES.ADMIN])])
   .post([validateSchema(createUserSchema)], createUser);
 
 router.route("/login").post([validateSchema(loginSchema)], loginUser);

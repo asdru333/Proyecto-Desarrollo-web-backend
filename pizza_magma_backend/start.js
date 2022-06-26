@@ -2,8 +2,8 @@ const swaggerAutogen = require("swagger-autogen")();
 
 const doc = {
   info: {
-    title: "Lab CI0137 - API",
-    description: "Este es el API del laboratorio de backend del curso CI0137",
+    title: "API Pizza Magma",
+    description: "API de la Pizzería Magma, maneja cuentas y órdenes de los usuarios e items de los menús.",
   },
   host: "localhost:7500",
   schemes: ["http", "https"],
@@ -12,9 +12,6 @@ const doc = {
       name: "José Rodríguez Pérez",
       email: "jose@correo.com",
       password: "patito",
-      countryCode: 506,
-      phone: 70155104,
-      birthday: "1989-10-16",
     },
     LoginUser: {
       email: "jose@correo.com",
