@@ -8,6 +8,8 @@ const pizzasRoutes = require("./routes/pizzas");
 const drinksRoutes = require("./routes/drinks");
 const accompanimentsRoutes = require("./routes/accompaniments");
 const desertsRoutes = require("./routes/deserts");
+const ingredientsRoutes = require("./routes/ingredients");
+const combosRoutes = require("./routes/combos");
 dotenv.config();
 const server = express();
 server.use(express.json());
@@ -20,6 +22,8 @@ server.use("/pizzas", pizzasRoutes);
 server.use("/drinks", drinksRoutes);
 server.use("/accompaniments", accompanimentsRoutes);
 server.use("/deserts", desertsRoutes);
+server.use("/ingredients", ingredientsRoutes);
+server.use("/combos", combosRoutes);
 
 // Documentation setup
 server.use("/docs", swaggerUI.serve, swaggerUI.setup(swaggerFile));

@@ -3,8 +3,6 @@ const bcrypt = require("bcrypt");
 const { sendRecoveryCodeEmail } = require("../services/mailService");
 const saltRounds = 10;
 
-
-
 exports.createUser = async (req, res) => {
   // #swagger.tags = ['Users']
   /*  #swagger.parameters['obj'] = {
