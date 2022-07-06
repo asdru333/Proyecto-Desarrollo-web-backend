@@ -1,4 +1,3 @@
-const db = require("../models/index");
 
 exports.listAccompaniments = async (req, res) => {
   // #swagger.tags = ['Accompaniments']

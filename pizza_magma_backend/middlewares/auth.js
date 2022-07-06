@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const db = require("../models/index");
 
 exports.checkUserIsAuthenticated = async (req, res, next) => {
     let token;
@@ -12,7 +11,7 @@ exports.checkUserIsAuthenticated = async (req, res, next) => {
             });
         }
         else {
-            try {
+            try { 
                 const decodedToken = jwt.verify(token, process.env.JWT_KEY);
                 const user = db.User.findByPk(decodedToken.userId);
                 if (!user) {
