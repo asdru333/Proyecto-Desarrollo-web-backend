@@ -1,8 +1,8 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "Lab CI0137 - API",
-    "description": "Este es el API del laboratorio de backend del curso CI0137",
+    "title": "API Pizza Magma",
+    "description": "API de la Pizzería Magma, maneja cuentas y órdenes de los usuarios e items de los menús.",
     "version": "1.0.0"
   },
   "host": "localhost:7500",
@@ -14,9 +14,6 @@
   "paths": {
     "/users/": {
       "get": {
-        "tags": [
-          "Users"
-        ],
         "description": "",
         "parameters": [
           {
@@ -26,17 +23,11 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
-          },
           "400": {
             "description": "Bad Request"
           },
           "401": {
             "description": "Unauthorized"
-          },
-          "500": {
-            "description": "Internal Server Error"
           }
         }
       },
@@ -119,9 +110,6 @@
         "responses": {
           "204": {
             "description": "No Content"
-          },
-          "401": {
-            "description": "Unauthorized"
           },
           "422": {
             "description": "Unprocessable Entity"
@@ -219,6 +207,34 @@
           }
         }
       }
+    },
+    "/ingredients/": {
+      "get": {
+        "tags": [
+          "Ingredients"
+        ],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/combos/": {
+      "get": {
+        "tags": [
+          "Combos"
+        ],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -236,18 +252,6 @@
         "password": {
           "type": "string",
           "example": "patito"
-        },
-        "countryCode": {
-          "type": "number",
-          "example": 506
-        },
-        "phone": {
-          "type": "number",
-          "example": 70155104
-        },
-        "birthday": {
-          "type": "string",
-          "example": "1989-10-16"
         }
       }
     },
