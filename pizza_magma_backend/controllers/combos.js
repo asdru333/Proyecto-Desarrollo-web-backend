@@ -4,23 +4,31 @@ exports.listCombos = async (req, res) => {
     const combos = [
         {
             id : 1,
-            description : '2 pizzas medianas más un refresco de 2 litros',
-            price : 9500
+            name: '2 pizzas medianas de jamón + 2 coca colas',
+            description : 'Promoción disponible solo los fines de semana',
+            price : 13000,
+            image: 'https://ci0137.s3.amazonaws.com/magma/promos/Promo-2pizzas-2cocas.png'
         },
         {
             id : 2,
-            description: '1 pizza grande\n1 refresco 1 litro\n1 acompañamiento\n1 postre',
-            price: 9500
+            name: '3 slices de pizza de jamón',
+            description: 'Promoción disponible todos los días',
+            price: 1500,
+            image: 'https://ci0137.s3.amazonaws.com/magma/promos/3-slices-jamon.png'
         },
         {
             id : 3,
-            description: '1 postre gratis por la compra de 3 pizzas',
-            price: 0
+            name: '1 bebida gratis por la compra de 2 pizzas',
+            description: 'Promoción disponible todos los días',
+            price: 0,
+            image: 'https://ci0137.s3.amazonaws.com/magma/promos/2pizzas%2Bcocacola.png'
         },
         {
             id : 4,
-            description: '2x1 en pizzas\nSólo los míercoles',
-            price: 0
+            name: '2x1 en pizzas',
+            description: 'Promoción disponible sólo los míercoles',
+            price: 0,
+            image: 'https://ci0137.s3.amazonaws.com/magma/promos/doble-pizza-+jamon.png'
         }
     ]
 res.json(combos);
