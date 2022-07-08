@@ -25,23 +25,6 @@ exports.listIngredients = async (req, res) => {
             value: "monster"
         }
       ],
-      "crusts" : [
-        {
-            label: "Delgada",
-            price: 0,
-            value: "thin"
-        },
-        {
-            label: "Gruesa",
-            price: 500,
-            value: "thick"
-        },
-        {
-            label: "Cheesy",
-            price: 800,
-            value: "cheesy"
-        }
-      ],
       "sauces" : [
         {
             label: "Tomate",
@@ -49,9 +32,9 @@ exports.listIngredients = async (req, res) => {
             value: "tomato"
         },
         {
-            label: "Alfredo",
+            label: "Picante",
             price: 400,
-            value: "alfredo"
+            value: "spicy"
         },
         {
             label: "BBQ",
@@ -61,19 +44,19 @@ exports.listIngredients = async (req, res) => {
       ],
       "cheeses" : [
         {
-            label: "Tres Quesos",
+            label: "Goda",
             price: 300,
-            value: "three"
+            value: "Goda"
         },
         {
-            label: "Parmesano y Romano",
+            label: "Parmesano",
             price: 400,
             value: "parm"
         },
         {
-            label: "Queso Azul",
+            label: "Mozzarella",
             price: 400,
-            value: "blue"
+            value: "Moza"
         }
       ],
       "meats" : [

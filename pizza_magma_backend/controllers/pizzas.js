@@ -32,7 +32,7 @@ exports.listPizzas = async (req, res) => {
   {
     id:5,
     name:'Pizza caótica',
-    description: 'Salsa: Tomate\nQueso: Parmesano\nIngredientes: Salami, maíz, aceituna, hongos y cebolla',
+    description: 'Salsa: Picante\nQueso: Parmesano\nIngredientes: Salami, maíz, aceituna, hongos y cebolla',
     price:10000,
     image: 'https://ci0137.s3.amazonaws.com/magma/pizzas/pizza_ca%C3%B3tica.png'
   },
