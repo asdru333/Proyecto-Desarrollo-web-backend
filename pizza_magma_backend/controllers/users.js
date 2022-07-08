@@ -13,10 +13,10 @@ exports.createUser = async (req, res) => {
   try {
     const userPayload = req.body;
     const newUser = {
-      name : userPayload.name,
-      email : userPayload.email,
-      password : await bcrypt.hash(userPayload.password, saltRounds)
-    }
+      name: userPayload.name,
+      email: userPayload.email,
+      password: await bcrypt.hash(userPayload.password, saltRounds),
+    };
     res.json(newUser);
   } catch (error) {
     res.status(500).json({
@@ -34,14 +34,17 @@ exports.loginUser = async (req, res) => {
           description: 'Add a user',
           schema: { $ref: '#/definitions/LoginUser' }
   } */
-  const testUser = { 
+  const testUser = {
     name: "Rodrigo",
     email: "rodrigo.piedra@ucr.ac.cr",
-    password: "$2b$10$RwmQLVkd8YhnfK7paOd3W.oJo5/Zq3UXoIzUsuq.Tyf9pQHi7mzTG"
-  }
+    password: "$2b$10$RwmQLVkd8YhnfK7paOd3W.oJo5/Zq3UXoIzUsuq.Tyf9pQHi7mzTG",
+  };
   try {
     const userPayload = req.body;
-    if (userPayload.email !== testUser.email || !await bcrypt.compare(userPayload.password, testUser.password)) {
+    if (
+      userPayload.email !== testUser.email ||
+      !(await bcrypt.compare(userPayload.password, testUser.password))
+    ) {
       res.status(401).send("Invalid credentials");
       return;
     }
@@ -60,7 +63,7 @@ exports.loginUser = async (req, res) => {
     res.json({
       //...user.toJSON(),
       //token,
-      testUser
+      testUser,
     });
   } catch (error) {
     res.status(500).send("Server error: " + error);
@@ -94,28 +97,24 @@ exports.resetPassword = async (req, res) => {
           description: 'Add a user',
           schema: { $ref: '#/definitions/ResetPassword' }
   } */
+  const testUser = {
+    name: "Rodrigo",
+    email: "rodrigo.piedra@ucr.ac.cr",
+    password: "$2b$10$RwmQLVkd8YhnfK7paOd3W.oJo5/Zq3UXoIzUsuq.Tyf9pQHi7mzTG",
+    code: 963221,
+  };
+
   try {
     const userPayload = req.body;
-    const user = await db.User.findOne({
-      where: { email: userPayload.email },
-      include: "confirmationCode",
-    });
 
-    if (!user || !user.confirmationCode || user.confirmationCode.code !== userPayload.code) {
+    if ( testUser.email !== userPayload.email || testUser.code !== userPayload.code) {
       res.status(401).send("Datos no válidos");
       return;
     }
 
-    user.password = await bcrypt.hash(userPayload.password, saltRounds);
-    await user.save();
-
-    await db.ConfirmationCode.destroy({
-      where: {
-        idUsuario: user.id,
-      },
-    });
-
-    res.status(204).send();
+    testUser.password = await bcrypt.hash(userPayload.password, saltRounds);
+    //res.status(204).send();
+    res.json({testUser});
   } catch (error) {
     res.status(500).send("Server error: " + error);
   }

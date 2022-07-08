@@ -21,7 +21,8 @@ router
   .get([checkUserIsAuthenticated, checkRoles([ROLES.ADMIN])])
   .post([validateSchema(createUserSchema)], createUser);
 
-router.route("/login").post([validateSchema(loginSchema)], loginUser);
+router
+  .route("/login").post([validateSchema(loginSchema)], loginUser);
 
 router
   .route("/recover-password")
