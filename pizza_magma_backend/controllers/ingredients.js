@@ -4,124 +4,152 @@ exports.listIngredients = async (req, res) => {
     const ingredients = {
       "sizes" : [
         {
-            name: "Pequeña",
-            price: 100
+            label: "Pequeña",
+            price: 1000,
+            value: "small"
         },
         {
-            name: "Mediana",
-            price: 100
+            label: "Mediana",
+            price: 2000,
+            value: "medium"
         },
         {
-            name: "Grande",
-            price: 100
+            label: "Grande",
+            price: 3000,
+            value: "large"
+
         },
         {
-            name: "Monstruo",
-            price: 100
+            label: "Monstruo",
+            price: 4000,
+            value: "monster"
         }
       ],
       "crusts" : [
         {
-            name: "Delgada",
-            price: 100
+            label: "Delgada",
+            price: 0,
+            value: "thin"
         },
         {
-            name: "Gruesa",
-            price: 100
+            label: "Gruesa",
+            price: 500,
+            value: "thick"
         },
         {
-            name: "Cheesy",
-            price: 100
+            label: "Cheesy",
+            price: 800,
+            value: "cheesy"
         }
       ],
       "sauces" : [
         {
-            name: "Tomate",
-            price: 100
+            label: "Tomate",
+            price: 200,
+            value: "tomato"
         },
         {
-            name: "Alfredo",
-            price: 100
+            label: "Alfredo",
+            price: 400,
+            value: "alfredo"
         },
         {
-            name: "BBQ",
-            price: 100
+            label: "BBQ",
+            price: 400,
+            value: "bbq"
         }
       ],
       "cheeses" : [
         {
-            name: "Tres Quesos",
-            price: 100
+            label: "Tres Quesos",
+            price: 300,
+            value: "three"
         },
         {
-            name: "Parmesano y Romano",
-            price: 100
+            label: "Parmesano y Romano",
+            price: 400,
+            value: "parm"
         },
         {
-            name: "Queso Azul",
-            price: 100
+            label: "Queso Azul",
+            price: 400,
+            value: "blue"
         }
       ],
       "meats" : [
         {
-            name: "Jamón",
-            price: 100
+            label: "Jamón",
+            price: 100,
+            value: "ham"
         },
         {
-            name: "Tocineta",
-            price: 100
+            label: "Tocineta",
+            price: 200,
+            value: "bacon"
         },
         {
-            name: "Carne molida",
-            price: 100
+            label: "Carne molida",
+            price: 200,
+            value: "beef"
         },
         {
-            name: "Pepperoni",
-            price: 100
+            label: "Pepperoni",
+            price: 300,
+            value: "pepperoni"
         },
         {
-            name: "Pollo",
-            price: 100
+            label: "Pollo",
+            price: 200,
+            value: "chicken"
         },
         {
-            name: "Salchicha",
-            price: 100
+            label: "Salchicha",
+            price: 250,
+            value: "sausage"
         }
       ],
       "vegetables" : [
         {
-            name: "Cebolla",
-            price: 100
+            label: "Cebolla",
+            price: 50,
+            value: "onion"
         },
         {
-            name: "Chile",
-            price: 100
+            label: "Chile",
+            price: 50,
+            value: "peppers"
         },
         {
-            name: "Aceitunas",
-            price: 300
+            label: "Aceitunas",
+            price: 100,
+            value: "olives"
         },
         {
-            name: "Hongos",
-            price: 200
+            label: "Hongos",
+            price: 100,
+            value: "mushrooms"
         },
         {
-            name: "Rodajas de tomate",
-            price: 100
+            label: "Rodajas de tomate",
+            price: 50,
+            value: "tomatoes"
         },
         {
-            name: "Piña",
-            price: 10000
+            label: "Piña",
+            price: 10000,
+            value: "pineapple"
         }
       ],
       "extras" : [
         {
-            name: "Queso extra",
-            price: 400
+            label: "Queso extra",
+            price: 300,
+            value: "cheese"
         },
         {
-            name: "Salsa extra",
-            price: 300
+            label: "Salsa extra",
+            price: 200,
+            value: "sauce"
         }  
       ]
     }
