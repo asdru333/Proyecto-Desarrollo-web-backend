@@ -222,6 +222,34 @@
         }
       }
     },
+    "/homePizzas/": {
+      "get": {
+        "tags": [
+          "HomePizzas"
+        ],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/homeCombos/": {
+      "get": {
+        "tags": [
+          "HomeCombos"
+        ],
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/combos/": {
       "get": {
         "tags": [

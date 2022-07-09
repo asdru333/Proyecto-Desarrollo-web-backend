@@ -9,6 +9,8 @@ const drinksRoutes = require("./routes/drinks");
 const accompanimentsRoutes = require("./routes/accompaniments");
 const desertsRoutes = require("./routes/deserts");
 const ingredientsRoutes = require("./routes/ingredients");
+const homePizzasRoutes = require("./routes/homePizzas");
+const homeCombosRoutes = require("./routes/homeCombos");
 const combosRoutes = require("./routes/combos");
 dotenv.config();
 const server = express();
@@ -23,6 +25,8 @@ server.use("/drinks", drinksRoutes);
 server.use("/accompaniments", accompanimentsRoutes);
 server.use("/deserts", desertsRoutes);
 server.use("/ingredients", ingredientsRoutes);
+server.use("/homePizzas", homePizzasRoutes);
+server.use("/homeCombos", homeCombosRoutes);
 server.use("/combos", combosRoutes);
 
 // Documentation setup
