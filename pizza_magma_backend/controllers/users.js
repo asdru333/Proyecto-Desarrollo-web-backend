@@ -106,14 +106,12 @@ exports.resetPassword = async (req, res) => {
 
   try {
     const userPayload = req.body;
-
-    if ( testUser.email !== userPayload.email || testUser.code !== userPayload.code) {
+    if ( testUser.email !== userPayload.email || testUser.code !== parseInt(userPayload.code)) {
       res.status(401).send("Datos no válidos");
       return;
     }
 
     testUser.password = await bcrypt.hash(userPayload.password, saltRounds);
-    //res.status(204).send();
     res.json({testUser});
   } catch (error) {
     res.status(500).send("Server error: " + error);
