@@ -5,7 +5,7 @@ const doc = {
     title: "API Pizza Magma",
     description: "API de la Pizzería Magma, maneja cuentas y órdenes de los usuarios e items de los menús.",
   },
-  host: "localhost:7500",
+  host: "evening-refuge-56391.herokuapp.com",
   schemes: ["http", "https"],
   definitions: {
     CreateUser: {
