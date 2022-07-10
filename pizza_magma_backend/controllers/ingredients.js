@@ -6,35 +6,35 @@ exports.listIngredients = async (req, res) => {
         {
             label: "Pequeña",
             price: 1000,
-            value: "small"
+            value: "pequeña"
         },
         {
             label: "Mediana",
             price: 2000,
-            value: "medium"
+            value: "mediana"
         },
         {
             label: "Grande",
             price: 3000,
-            value: "large"
+            value: "grande"
 
         },
         {
             label: "Monstruo",
             price: 4000,
-            value: "monster"
+            value: "monstruo"
         }
       ],
       "sauces" : [
         {
             label: "Tomate",
             price: 200,
-            value: "tomato"
+            value: "tomate"
         },
         {
             label: "Picante",
             price: 400,
-            value: "spicy"
+            value: "picante"
         },
         {
             label: "BBQ",
@@ -51,29 +51,29 @@ exports.listIngredients = async (req, res) => {
         {
             label: "Parmesano",
             price: 400,
-            value: "parm"
+            value: "parmesano"
         },
         {
             label: "Mozzarella",
             price: 400,
-            value: "Moza"
+            value: "Mozzarella"
         }
       ],
       "meats" : [
         {
             label: "Jamón",
             price: 100,
-            value: "ham"
+            value: "jamón"
         },
         {
             label: "Tocineta",
             price: 200,
-            value: "bacon"
+            value: "tocineta"
         },
         {
             label: "Carne molida",
             price: 200,
-            value: "beef"
+            value: "carne molida"
         },
         {
             label: "Pepperoni",
@@ -83,56 +83,56 @@ exports.listIngredients = async (req, res) => {
         {
             label: "Pollo",
             price: 200,
-            value: "chicken"
+            value: "pollo"
         },
         {
             label: "Salchicha",
             price: 250,
-            value: "sausage"
+            value: "salchicha"
         }
       ],
       "vegetables" : [
         {
             label: "Cebolla",
             price: 50,
-            value: "onion"
+            value: "cebolla"
         },
         {
             label: "Chile",
             price: 50,
-            value: "peppers"
+            value: "chile"
         },
         {
             label: "Aceitunas",
             price: 100,
-            value: "olives"
+            value: "aceitunas"
         },
         {
             label: "Hongos",
             price: 100,
-            value: "mushrooms"
+            value: "hongos"
         },
         {
             label: "Rodajas de tomate",
             price: 50,
-            value: "tomatoes"
+            value: "rodajas de tomate"
         },
         {
             label: "Piña",
             price: 10000,
-            value: "pineapple"
+            value: "piña"
         }
       ],
       "extras" : [
         {
             label: "Queso extra",
             price: 300,
-            value: "cheese"
+            value: "queso"
         },
         {
             label: "Salsa extra",
             price: 200,
-            value: "sauce"
+            value: "salsa"
         }  
       ]
     }
