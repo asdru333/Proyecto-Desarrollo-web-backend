@@ -5,8 +5,8 @@ exports.listCombos = async (req, res) => {
         {
             id : 1,
             name: '2 pizzas medianas de jamón + 2 coca colas',
-            description : 'Promoción disponible solo los fines de semana',
-            price : 13000,
+            description : 'Promoción disponible todos los días',
+            price : 16000,
             image: 'https://ci0137.s3.amazonaws.com/magma/promos/Promo-2pizzas-2cocas.png'
         },
         {
@@ -18,16 +18,16 @@ exports.listCombos = async (req, res) => {
         },
         {
             id : 3,
-            name: '1 bebida gratis por la compra de 2 pizzas',
+            name: '1 coca cola + 2 pizzas de pepperoni pequeñas',
             description: 'Promoción disponible todos los días',
-            price: 0,
+            price: 15000,
             image: 'https://ci0137.s3.amazonaws.com/magma/promos/2pizzas%2Bcocacola.png'
         },
         {
             id : 4,
             name: '2x1 en pizzas',
-            description: 'Promoción disponible sólo los míercoles',
-            price: 0,
+            description: '2 pizzas de Jamón al precio de 1',
+            price: 12000,
             image: 'https://ci0137.s3.amazonaws.com/magma/promos/doble-pizza-+jamon.png'
         }
     ]

@@ -5,7 +5,7 @@
     "description": "API de la Pizzería Magma, maneja cuentas y órdenes de los usuarios e items de los menús.",
     "version": "1.0.0"
   },
-  "host": "localhost:7500",
+  "host": "evening-refuge-56391.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "http",
@@ -260,6 +260,32 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/orders/create-order": {
+      "post": {
+        "tags": [
+          "Order"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Create an order placed by a customer",
+            "schema": {
+              "$ref": "#/definitions/createOrder"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }

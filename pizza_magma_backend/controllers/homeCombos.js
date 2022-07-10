@@ -14,7 +14,7 @@ exports.listHomeCombos = async (req, res) => {
         },
         {
             id : 3,
-            name: '1 bebida gratis por la compra de 2 pizzas',
+            name: '1 coca cola + 2 pizzas de pepperoni pequeñas',
             image: 'https://ci0137.s3.amazonaws.com/magma/promos/2pizzas%2Bcocacola.png'
         },
         {
